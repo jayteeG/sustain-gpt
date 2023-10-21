@@ -4,27 +4,36 @@
 }
 
 body {
-    background-color: #353441;
+    background-color: #fff;
     font-family: proxima-nova;
     width:400px;
     height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
 }
 
 h1 {
-    color: #fff
+    color: #415C00;
 }
+/* 415C00
+778F00
+3f81ac
+84BBe1 */
 
 .editable {
     font-family: proxima-nova;
     resize: none;
-    background-color: #454754;
-    color: #D1D5CA;
+    background-color: #fff;
+    color: #415C00;
     font-size: 3.75vh;
     width: 94vw;
     border: 0px;
     border-radius: 2px;
     padding: 1vw;
     overflow-y: scroll;
+    /* min-height: 100vh; */
 }
 
 .editable:empty:before {
@@ -36,19 +45,39 @@ h1 {
     width: 0 !important
 }
 
+/* #input {
+    height: 60px;
+    border: 2px solid #415C00; /* Add a green border to the input */
+/* } */
+
+/* #output {
+    height: 270px;
+    border: 2px solid #415C00; /* Add a green border to the output */
+/* }  */
+
 #input {
-    height: 60px
+    height: 60px;
+    border: 3px solid #778F00; /* Make the border thicker */
+    border-radius: 10px; /* Add rounded corners */
 }
 
 #output {
     height: 270px;
+    border: 3px solid #778F00; /* Make the border thicker */
+    border-radius: 10px; /* Add rounded corners */
 }
 
 a {
     text-decoration: none;
-    color: #16e16e;
+    color: #415C00;
 }
 
 a:hover {
     cursor: pointer;
+}
+
+.custom-icon {
+    height: 1em; /* Set the height to 1em (same as the line height) */
+    vertical-align: middle; /* Align the image vertically in the middle of the line height */
+    margin-right: 10px; /* Add some spacing between the image and the text (adjust as needed) */
 }
