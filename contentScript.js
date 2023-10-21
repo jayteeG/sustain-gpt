@@ -15,7 +15,10 @@ chrome.runtime.onMessage.addListener(async (request, sender, response) => {
     if (type === "LOAD") {
         try {
             const selection = await returnSelection()
-            response(selection)
+            console.log(selection)
+            console.log("Hello world" + selection)
+            const updated_select = "This is a prompt for you " + selection
+            response(updated_select)
         } catch (e) {
             response()
         }
